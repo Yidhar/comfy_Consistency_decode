@@ -49,7 +49,7 @@ class Consistency_load:
 		# sd = comfy.utils.load_torch_file(vae_path)
 		# vae = comfy.sd.VAE(sd=sd)
 		# pipe.vae.cuda()
-		print(vae_path)
+		# print(vae_path)
 		Consistency = ConsistencyDecoder(device="cuda:0",path=vae_path)
 		return (Consistency,)
 	
